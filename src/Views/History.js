@@ -4,7 +4,15 @@ import moment from "moment";
 import _ from "lodash";
 const History = (props) => {
 	const user = useSelector((state) => state.user.user);
-	user.history = _.orderBy(user.history, ["date", "startTime"], "desc");
+	user.history = _.orderBy(
+		user.history,
+		[
+			function (o) {
+				return moment(o.date);
+			}
+		],
+		"desc"
+	);
 	return (
 		<div className={"flex flex-col justify-center items-center"}>
 			<span className={"p-4 font-bold"}>
