@@ -83,7 +83,6 @@ const ParkingTime = (props) => {
 	}, [parkedCar]);
 
 	const calculateFee = (parkingTime) => {
-		console.log("parkingTime", parkingTime);
 		let firstHourPrice = 10;
 		let nextHoursPrice = 5;
 		let parkingTimeHours = Math.ceil(parkingTime / 60);

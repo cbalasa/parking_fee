@@ -45,7 +45,7 @@ const SignUp = (props) => {
 		//update newUser
 		let newUserLocal = JSON.parse(JSON.stringify(newUser));
 		if (newUserLocal[name] !== undefined) {
-			newUserLocal[name] = value;
+			newUserLocal[name] = value.toLowerCase();
 			setNewUser(newUserLocal);
 		}
 		setsignUpData(dataItem);
@@ -80,7 +80,7 @@ const SignUp = (props) => {
 			setErrorPassword(true);
 			return;
 		}
-
+		signUpData.email = signUpData.email.toLowerCase();
 		let credentials = JSON.parse(localStorage.getItem("credentials"));
 		if (credentials === null) {
 			localStorage.setItem("credentials", JSON.stringify([signUpData]));

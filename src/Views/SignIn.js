@@ -20,7 +20,7 @@ const SignIn = (props) => {
 		} else {
 			let user = credentials.find(function (cred) {
 				return (
-					cred.email === signInData.email &&
+					cred.email.toLowerCase() === signInData.email.toLowerCase() &&
 					cred.password === signInData.password
 				);
 			});

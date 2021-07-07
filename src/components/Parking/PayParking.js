@@ -33,7 +33,7 @@ const PayParking = (props) => {
 	return (
 		<div
 			className={
-				"absolute centerAbsoluteBox bg-white w-full h-screen items-center justify-center flex "
+				"fixed centerAbsoluteBox bg-white w-full h-screen items-center justify-center flex "
 			}
 		>
 			<div

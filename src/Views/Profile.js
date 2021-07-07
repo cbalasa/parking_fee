@@ -8,7 +8,6 @@ const Profile = (props) => {
 	const user = useSelector((state) => state.user.user);
 	const dispatch = useDispatch();
 	const saveChanges = () => {
-		console.log("save changes to plate");
 		user.plate = plate;
 		let users = JSON.parse(localStorage.getItem("users"));
 		users.forEach((usr, i) => {

@@ -54,7 +54,6 @@ const Gmaps = (props) => {
 	const showParkingPopUp = useSelector(
 		(state) => state.parking.showParkingPopUp
 	);
-	console.log(showParkingPopUp);
 	const { isLoaded } = useJsApiLoader({
 		id: "google-map-script",
 		googleMapsApiKey: "AIzaSyBb9hgzt0E5hpIhOFnmkgO82Kd4hAk3pqQ"

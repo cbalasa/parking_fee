@@ -56,16 +56,16 @@ const Menu = (props) => {
 					{/* hamburger menu */}
 					<div className={"hidden sm:flex "}>
 						<div
-							onClick={() => history.push("/history")}
-							className={"px-4 cursor-pointer"}
-						>
-							History
-						</div>
-						<div
 							onClick={() => history.push("/")}
 							className={"px-4 cursor-pointer"}
 						>
 							Park
+						</div>
+						<div
+							onClick={() => history.push("/history")}
+							className={"px-4 cursor-pointer"}
+						>
+							History
 						</div>
 						<div
 							onClick={() => history.push("/profile")}
@@ -81,16 +81,16 @@ const Menu = (props) => {
 							}
 						>
 							<div
-								onClick={() => history.push("/history")}
-								className={"px-4 cursor-pointer border-b p-2 font-bold"}
-							>
-								History
-							</div>
-							<div
 								onClick={() => history.push("/")}
 								className={"px-4 cursor-pointer border-b p-2 font-bold"}
 							>
 								Park
+							</div>
+							<div
+								onClick={() => history.push("/history")}
+								className={"px-4 cursor-pointer border-b p-2 font-bold"}
+							>
+								History
 							</div>
 							<div
 								onClick={() => history.push("/profile")}

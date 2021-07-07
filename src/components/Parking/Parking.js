@@ -14,7 +14,6 @@ const ParkingDetails = (props) => {
 	}, []);
 
 	useEffect(() => {
-		console.log("carParked", carParked);
 		updateParkedCars();
 	}, [carParked]);
 
