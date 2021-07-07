@@ -1,4 +1,4 @@
-#Stack
+# Stack
 ### React
 ### Tailwind Css
 ### Moment Js for dealing with dates and time
