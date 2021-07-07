@@ -1,8 +1,8 @@
-# Stack
+# What I used
 ### React
 ### Tailwind Css
 ### Moment Js for dealing with dates and time
-### Lodash for some components
+### Lodash
 ### Google Maps
 
 # Install node modules
