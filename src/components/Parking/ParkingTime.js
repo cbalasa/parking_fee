@@ -19,8 +19,7 @@ const ParkingTime = (props) => {
 	useEffect(() => {
 		if (Object.keys(user.activeSession).length > 0) {
 			setDateItWasParked(user.activeSession.date);
-			setParkingTime(user.activeSession.duration);
-			setAmountToPay(user.activeSession.amount);
+			parkHandler();
 			setParkedCar(true);
 		}
 	}, []);
@@ -64,7 +63,7 @@ const ParkingTime = (props) => {
 		);
 		setParkingTime(sessionActiveTime.asMinutes());
 
-		calculateFee(parkingTime);
+		calculateFee(sessionActiveTime.asMinutes());
 	};
 
 	//every minute update the parking info
@@ -84,6 +83,7 @@ const ParkingTime = (props) => {
 	}, [parkedCar]);
 
 	const calculateFee = (parkingTime) => {
+		console.log("parkingTime", parkingTime);
 		let firstHourPrice = 10;
 		let nextHoursPrice = 5;
 		let parkingTimeHours = Math.ceil(parkingTime / 60);

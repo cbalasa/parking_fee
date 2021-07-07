@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import * as userActions from "../store/actions/users-action";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
+import GmailLogin from "../components/SignIn/GmailLogin";
 const SignIn = (props) => {
 	const dispatch = useDispatch();
 	const history = useHistory();
@@ -24,6 +25,7 @@ const SignIn = (props) => {
 				);
 			});
 			if (user == undefined) {
+				setError("Username does not exist!");
 				return;
 			}
 
@@ -54,8 +56,9 @@ const SignIn = (props) => {
 					"flex flex-col bg-gray-100 p-4 rounded-lg md:w-6/12 lg:w-4/12 w-10/12 text-sm shadow-lg"
 				}
 			>
-				<div className={"p-4"}>Gmail</div>
-				<div>or use email to login</div>
+				{/* <GmailLogin /> */}
+				{/* <div className={"p-4"}>Gmail</div> */}
+				{/* <div>or use email to login</div> */}
 				<form className={"flex flex-col justify-between"} name="loginForm">
 					<input
 						type={"text"}
