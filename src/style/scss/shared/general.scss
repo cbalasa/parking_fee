@@ -1,0 +1,27 @@
+// ================================= BUTTONS =================================
+.button {
+	@apply p-2 rounded-lg font-bold text-white w-6/12 mt-4 self-center;
+}
+// ================================= BUTTONS =================================
+
+// ================================= BACKGROUND COLORS =================================
+
+.bgSuccess {
+	background-color: $success;
+}
+
+// ================================= BACKGROUND COLORS =================================
+
+//ERRORS MESSAGE
+.error_message {
+	@apply text-red-500 text-xs font-bold;
+}
+
+.containerSign {
+	@apply flex items-center  h-screen w-full justify-center;
+}
+.centerAbsoluteBox {
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
