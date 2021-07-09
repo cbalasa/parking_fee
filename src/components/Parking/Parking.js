@@ -36,8 +36,8 @@ const ParkingDetails = (props) => {
 					X
 				</span>
 				<div className={"flex flex-col "}>
-					<h1 className={"font-bold text-lg"}>Equilobe Parking</h1>
-					<span className={"text-gray-700"}>Doctor Grigore Romniceanu 3a</span>
+					<h1 className={"font-bold text-lg"}>Parking</h1>
+					<span className={"text-gray-700"}>Doctor Grigore Romniceanu </span>
 					<span className={"text-gray-700 mb-8"}>Bucharest</span>
 				</div>
 				<div

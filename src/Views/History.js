@@ -15,9 +15,7 @@ const History = (props) => {
 	);
 	return (
 		<div className={"flex flex-col justify-center items-center"}>
-			<span className={"p-4 font-bold"}>
-				History of your parkings at Equilobe Parking
-			</span>
+			<span className={"p-4 font-bold"}>History of your parkings</span>
 
 			{user.history.map((parking, i) => {
 				return (
